@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume Builder</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="resume-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="profile_image.png" alt="Profile Picture" class="profile-picture">
+            <section id="objective">
+                <h3 style="color: white;"><i class="fas fa-bullseye"></i> Career Objective</h3>
+                <p style="text-align: justify; hyphens: auto;">To contribute as a Software Engineer by building
+                    innovative solutions and enhancing my skills in a dynamic and growth-oriented environment.
+
+                </p>
+            </section>
+            <section id="certification">
+                <h3 style="color: white;"><i class="fas fa-certificate"></i> Certifications</h3>
+                <p><b><i>Artificial Intelligence, Web 3.0 & Metaverse:</i></b> From Governor House Karachi (Ongoing)</p>
+            </section>
+        </div>
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1>Static Interactive Resume</h1>
+            <!-- Personal-Info Section -->
+            <section id="personal-info">
+                <h3><i class="fas fa-user"></i> Personal Information</h3>
+                <p><b><i>Name: </i></b> Tayyaba Ramzan</p>
+                <p><b><i>Phone: </i></b> 03402184138</p>
+                <p><b><i>age: </i></b> 19</p>
+                <p><b><i>Email: </i></b><a href="mailto:tayyabaramzan.pak@gmail.com" target="_blank">
+                        tayyabaramzan.pak@gmail.com</a></p>
+                <p><b><i>LinkedIn: </i></b><a href="https://www.linkedin.com/in/tayyabaramzan" target="_blank">
+                        www.LinkedIn.com</a></p>
+            </section>
+            <!-- Education Section -->
+            <section id="education">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <p><b><i>Matriculation (Science):</i></b> P.F. Public School</p>
+                <p><b><i>Intermediate in Computer Science:</i></b> Karachi American School (KAS) </p>
+                <p><b><i>Software Engineering Diploma:</i></b> Govt. Polytechnic Institute (Women), Karachi</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h3><i class="fas fa-tools"></i> Skills</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> HTML & CSS</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
+                    <li><i class="fas fa-comment-dots"></i> Communication Skills</li>
+                </ul>
+            </section>
+            <!-- Work Experience -->
+            <section id="work-experience">
+                <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                <p><b><i>Company: </i></b> Axact</p>
+                <p><b><i>Position: </i></b> Software Engineer</p>
+                <p><b><i>Duration:</i></b> 2019-2021</p>
+
+            </section>
+            <!-- Button to toggle Skills Section -->
+            <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
