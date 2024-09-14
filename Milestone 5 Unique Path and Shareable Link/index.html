@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Path and Shareable Link</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <section id="resume-form" aria-labelledby="resume-form-heading">
+            <h1 id="resume-form-heading"><i class="fas fa-map"></i> Unique Path and Shareable Link <i
+                    class="fas fa-link"></i>
+            </h1>
+            <form id="form">
+                <!-- Personal Information -->
+                <fieldset>
+                    <label for="profile-picture-input">Profile Picture:</label>
+                    <input type="file" id="profile-picture-input" accept="image/*" aria-required="false">
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" required aria-required="true"
+                            placeholder="Enter Your username">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required aria-required="true" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required aria-required="true" placeholder="Enter Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" required aria-required="true"
+                                placeholder="Enter Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="text" id="age" aria-required="false" placeholder="Enter Your Age">
+                        </div>
+                </fieldset>
+
+                <!-- Education -->
+                <fieldset>
+                    <legend>Education</legend>
+                    <div class="form-group">
+                        <label for="education">Education (comma separated):</label>
+                        <input type="text" id="education" aria-required="false" placeholder="Enter Your Education">
+                    </div>
+                </fieldset>
+
+                <!-- Skills -->
+                <fieldset>
+                    <legend>Skills</legend>
+                    <div class="form-group">
+                        <label for="skills">Skills (comma separated):</label>
+                        <input type="text" id="skills" aria-required="false" placeholder="Enter Your Skills">
+                    </div>
+                </fieldset>
+
+                <!-- Work Experience -->
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <div class="form-group">
+                        <label for="work-experience">Work Experience (comma separated):</label>
+                        <input type="text" id="experience" aria-required="false"
+                            placeholder="Enter Your Work Experience">
+                    </div>
+                </fieldset>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+
+            <br>
+
+            <!-- Dynamic & Editable Resume -->
+            <section id="resume-display" aria-labelledby="resume-display-heading" contenteditable="true">
+                <h2 id="resume-display-heading">Generated Resume</h2>
+                <!-- Resume Will Be Generated Here -->
+            </section>
+            <br>
+            <!-- Section For The Shareable Link & Download Button -->
+        </section>
+        <div id="shareable-link-container" style="display: none;">
+            <h2>Shareable Link</h2>
+            <p>Here is your Unique Link to view or edit your Resume: </p>
+            <a href="#" id="shareable-link" target="_blank"></a>
+            <br>
+            <button id="download-pdf"><b>Download as PDF</b></button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
